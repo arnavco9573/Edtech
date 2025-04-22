@@ -1,5 +1,11 @@
 import CourseRoadmapPage from "./components/CourseRoadmapPage";
 
-export default function CourseDetails({ params }: { params: { id: string } }) {
-  return <CourseRoadmapPage courseId={params.id} />;
-}
+
+const CourseDetails = async ({ params }: { params: { id: string } }) => {
+
+  const courseId = params.id;
+
+  return <CourseRoadmapPage courseId={courseId} />;
+};
+
+export default CourseDetails;
